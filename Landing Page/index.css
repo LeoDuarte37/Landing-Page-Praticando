@@ -36,6 +36,13 @@ body {
     background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E5 100%);
 }
 
+header, main section, footer {
+    border: 1px inset var(--color-black);
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 header img {
     display: block;
     margin: 2rem auto;
