@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -38,11 +38,15 @@ body {
     background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E5 100%);
 }
 
+
 header, main section, footer {
     border: 1px inset var(--color-black);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+footer {
     padding: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
 
 header img {
@@ -65,6 +69,17 @@ header nav li:nth-child(odd) {
     margin-top: 10px;
     padding: 10px;
     text-align: right;
+}
+
+.section-1 img{
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+}
+
+.section-1 div {
+    padding: 0 2rem;
+    margin-bottom: 16rem;
 }
 
 footer nav li {
@@ -91,9 +106,12 @@ footer nav li {
     color: var(--color-primary);
 }
 
-.bandaImg {
-    max-width: 100%;
-}
 .conhecer {
     text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
 }
