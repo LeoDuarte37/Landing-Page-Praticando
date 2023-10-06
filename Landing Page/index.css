@@ -121,13 +121,28 @@ h1, h2 {
 }
 
 .impac::after {
+    content: '';
+    display: inline;
     background-image: url(img/three-dashes.svg);
     width: 46px;
     height: 49px;
-    content: '';
-    display: inline;
     position: relative;
     bottom: 12px;
     right: 5px;
 
+}
+
+.btnComece {
+    position: absolute;
+}
+
+.btnComece::after {
+    content: '';
+    background-image: url(img/arrow-curve.svg);
+    width: 7rem;
+    height: 3rem;
+    transform: rotate(-5deg);
+    position: absolute;
+    left: 8rem;
+    top: 4rem;
 }
