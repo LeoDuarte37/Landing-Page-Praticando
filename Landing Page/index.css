@@ -78,8 +78,9 @@ header nav li:nth-child(odd) {
 }
 
 .section-1 div {
+    display: block;
     padding: 0 2rem;
-    margin-bottom: 16rem;
+    margin-bottom: 19rem;
 }
 
 footer nav li {
@@ -108,7 +109,8 @@ footer nav li {
 
 .conhecer {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 h1, h2 {
@@ -145,4 +147,36 @@ h1, h2 {
     position: absolute;
     left: 8rem;
     top: 4rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 7rem;
+}
+
+.cards article {
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    height: 18rem;
+    
+}
+
+.cards article img {
+    width: 48px;
+    height: 48px;
+}
+
+.cards article:nth-child(odd) {
+    background-color: var(--color-primary);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.cards article:nth-child(even) {
+    background-color: var(--color-secundary);
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
