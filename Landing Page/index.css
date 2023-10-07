@@ -234,3 +234,16 @@ footer form input {
 footer form input:focus {
     outline-style: none;
 }
+
+
+/* Desktop */
+
+@media (min-width: 1500px) {
+    header {
+        display: flex;
+    }
+
+    header nav {
+        display: flex;
+    }
+}
