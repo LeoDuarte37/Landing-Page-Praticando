@@ -245,7 +245,40 @@ footer form input:focus {
 
 /* Desktop */
 
-@media (min-width: 1500px) {
+@media screen and (min-width: 700px) {
+    header nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav li {
+        margin: 0 1rem 0 2rem;
+        text-align: center;
+    }
+
+    header nav li:nth-child(odd) {
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+    header a{
+        margin-top: 2rem;
+    }    
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cards article:nth-child(even) {
+        background-color: var(--color-secundary);
+        margin-left: 0rem;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
     header {
         display: flex;
         justify-content: space-around;
@@ -269,6 +302,7 @@ footer form input:focus {
     header nav li {
         margin-right: 4rem;
         cursor: pointer;
+        font-size: 1.3rem;
     }
 
     header nav li:nth-child(odd) {
@@ -286,22 +320,22 @@ footer form input:focus {
 
     .section-1 {
         display: grid;
+        grid-auto-flow: column;
         grid-template-columns: 0.5fr 1fr;
-        
     }
 
     .section-1 img {
-        margin-bottom: 19rem;
+        display: flex;
+        margin-bottom: 17rem;
         order: 2;
-        width: 52rem;
-        height: 40rem;
+        width: 100%;
     }
 
     .section-1 div {
         
         order: 1;
-        padding: 0 0 0 2rem;
-        margin: 6rem 0 0 9rem;
+        padding: 0;
+        margin: 6rem 0 0 11rem;
         margin-bottom: 0;
     }
 
@@ -310,8 +344,13 @@ footer form input:focus {
     }
 
     .section-1 div p {
-        margin-top: 2.5rem;
+        margin-top: 2rem;
         font-size: 1.5rem;
+        text-align: left;
     
     } 
+
+    .section-1 div a {
+        margin-top: 1.5rem;
+    }
 }
