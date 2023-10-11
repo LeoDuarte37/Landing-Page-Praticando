@@ -93,7 +93,7 @@ header a {
     margin-bottom: 19rem;
 }
 
-.section-1 .divImpac {
+.divImpac {
     display: block;
     padding: 0 2rem;
     
@@ -269,17 +269,16 @@ footer form input:focus {
         margin-top: 2rem;
     }    
 
-    .section-1 div {
-        margin-top: 2rem;
-        margin-left: 8rem;
+    .section-1 .container, .divImpac {
+        margin-left: 7rem;
     }
 
-    .section-1 div p {
+    .divImpac p {
         margin-right: 12rem;
         text-align: justify;
     } 
 
-    .section-1 div a {
+    .divImpac a {
         align-self: center;
     }
 
@@ -299,18 +298,58 @@ footer form input:focus {
 @media screen and (min-width: 1500px) {
     .container {
         display: flex;
-        
+        justify-content: center;
+        align-items: center;
     }
 
-    .cardsRow {
-        margin-right: auto;
-        margin-left: auto;
+    .container.header {
+        justify-content: space-around;
+        margin: 2rem;
+    }
+
+    .container.header img {
+        margin: 0;
+    }
+
+    .container.header a {
+        margin: 0;
+    }
+
+    .container.row-reverse {
+        flex-direction: row-reverse;
+        margin-top: 0;
+    }
+
+    .section-1 img {
+        display: flex;
+        margin-bottom: 17rem;
+        width: 100%;
+    }
+
+    .divImpac {
+        padding: 0;
+        margin: 0;
+    }
+
+    .divImpac h1 {
+        font-size: 4rem;
+    }
+
+    .divImpac p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        text-align: left;
+    
+    } 
+
+    .divImpac a {
+        margin-top: 1.5rem;
     }
 
     .cardsRow article:nth-child(even) {
         margin-left: 0;
         margin-right: 2rem;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
     
     .cardsRow article:nth-child(odd) {
@@ -319,40 +358,7 @@ footer form input:focus {
         margin-right: 2rem;
     }
 
-    .section-1 {
-        flex-direction: row-reverse;
-    }
-
-    .section-1 img {
-        display: flex;
-        margin-bottom: 17rem;
-        order: 2;
-        width: 100%;
-    }
-
-    .section-1 div {
-        
-        order: 1;
-        padding: 0;
-        margin: 6rem 0 0 0;
-        margin-bottom: 0;
-    }
-
-    .section-1 div h1 {
-        font-size: 4rem;
-    }
-
-    .section-1 div p {
-        margin-top: 2rem;
-        font-size: 1.5rem;
-        text-align: left;
-    
-    } 
-
-    .section-1 div a {
-        margin-top: 1.5rem;
-    }
-
+   
     
     
 }
