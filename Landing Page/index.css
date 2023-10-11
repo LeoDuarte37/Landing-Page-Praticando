@@ -89,10 +89,14 @@ header a {
     margin-left: auto;
 }
 
-.section-1 div {
+.section-1 .container {
+    margin-bottom: 19rem;
+}
+
+.section-1 .divImpac {
     display: block;
     padding: 0 2rem;
-    margin-bottom: 19rem;
+    
 }
 
 footer nav li {
@@ -265,13 +269,27 @@ footer form input:focus {
         margin-top: 2rem;
     }    
 
-    .cards {
+    .section-1 div {
+        margin-top: 2rem;
+        margin-left: 8rem;
+    }
+
+    .section-1 div p {
+        margin-right: 12rem;
+        text-align: justify;
+    } 
+
+    .section-1 div a {
+        align-self: center;
+    }
+
+    .cardsRow {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .cards article:nth-child(even) {
-        background-color: var(--color-secundary);
+    .cardsRow article:nth-child(even) {
         margin-left: 0rem;
         margin-right: auto;
         margin-top: 2rem;
@@ -279,49 +297,30 @@ footer form input:focus {
 }
 
 @media screen and (min-width: 1500px) {
-    header {
+    .container {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 6rem;
+        
     }
 
-    header img {
-        display: flex;
-        width: 8rem;
-        margin: 0;
-        cursor: pointer;
+    .cardsRow {
+        margin-right: auto;
+        margin-left: auto;
     }
 
-    header nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    header nav li {
-        margin-right: 4rem;
-        cursor: pointer;
-        font-size: 1.3rem;
-    }
-
-    header nav li:nth-child(odd) {
-        margin-top: 0;
-        padding: 0;
-        text-align: normal;
+    .cardsRow article:nth-child(even) {
+        margin-left: 0;
+        margin-right: 2rem;
+        margin-top: 2rem;
     }
     
-    header a {
-        display: flex;
-        align-self: center;
-        margin: 0;
-        cursor: pointer;
+    .cardsRow article:nth-child(odd) {
+        background-color: var(--color-primary);
+        margin-left: 0;
+        margin-right: 2rem;
     }
 
     .section-1 {
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: 0.5fr 1fr;
+        flex-direction: row-reverse;
     }
 
     .section-1 img {
@@ -335,7 +334,7 @@ footer form input:focus {
         
         order: 1;
         padding: 0;
-        margin: 6rem 0 0 11rem;
+        margin: 6rem 0 0 0;
         margin-bottom: 0;
     }
 
@@ -353,4 +352,7 @@ footer form input:focus {
     .section-1 div a {
         margin-top: 1.5rem;
     }
+
+    
+    
 }
