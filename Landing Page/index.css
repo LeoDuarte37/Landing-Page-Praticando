@@ -191,7 +191,7 @@ h1, h2 {
     max-width: 17rem;
     padding: 2rem 0 0 2rem;
     gap: 1rem;
-    margin: 0 1rem;
+    margin: 1rem;
     background-color: var(--color-primary);
     border: 1px solid var(--color-black);
     box-shadow: 4px 4px 1px;
@@ -220,7 +220,7 @@ h1, h2 {
 
 .cards article:nth-child(even) {
     background-color: var(--color-secundary);
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .conhecer {
