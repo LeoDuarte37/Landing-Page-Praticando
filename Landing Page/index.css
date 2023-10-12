@@ -330,4 +330,34 @@ footer form input:focus {
         margin-right: 0;
         margin-left: 0;
     }
+
+    footer .container {
+        align-items: start;
+        justify-content: space-between;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    footer .container div {
+        width: 15%;
+    }
+
+    footer .container nav {
+        margin: 0;
+    }
+
+    footer .container nav a,
+    footer .container form {
+        margin-top: 0;
+    }
+
+    footer .container nav a {
+        margin-bottom: 1.7rem;
+    }
+
+    footer .container form {
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
