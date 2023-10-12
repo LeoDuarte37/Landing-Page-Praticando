@@ -187,6 +187,7 @@ h1, h2 {
     max-width: 17rem;
     padding: 2rem 0 0 2rem;
     gap: 1rem;
+    margin: 0 1rem;
     background-color: var(--color-primary);
     border: 1px solid var(--color-black);
     box-shadow: 4px 4px 1px;
@@ -265,6 +266,14 @@ footer form input:focus {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .cardsRow article:nth-child(even) {
+        margin-top: 2rem;
+    }
+
+    footer form input {
+        width: 27rem;
     }
 
     /* header nav {
