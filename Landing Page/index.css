@@ -296,47 +296,38 @@ footer form input:focus {
     }
 }
 
-@media screen and (min-width: 1500px) {
-    /* .container {
+@media screen and (min-width: 72rem) {
+    .container {
         display: flex;
-        margin: 0 auto;
         align-items: center;
-        
+        margin: 0 auto;
+        max-width: 72rem;
     }
 
-    .header {
-        justify-content: space-between;
+    .container nav a {
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 
-    header img,
-    header nav,
-    header li {
+    .container img,
+    .container .divImpac {
         margin: 0;
     }
 
     .container.row-reverse {
         flex-direction: row-reverse;
-        margin: 0 0 13rem;
     }
 
-
-    .cardsRow {
-        justify-content: center;
-    } */
-
-    /* .cardsRow article:nth-child(even) {
-        margin-left: 0;
-        margin-right: 2rem;
-        margin-top: 2.5rem;
+    .divImpac {
+        max-width: 100%;
     }
     
-    .cardsRow article:nth-child(odd) {
-        background-color: var(--color-primary);
-        margin-left: 0;
-        margin-right: 2rem;
-    } */
+    .cardsRow article {
+        max-width: 17.5rem;
+    }
 
-   
-    
-    
+    .cardsRow article:nth-child(even) {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
